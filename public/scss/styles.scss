@@ -1,0 +1,197 @@
+$loginColor: rgb(4, 58, 20);
+$headerfont: "Staatliches", cursive;
+$bodyFont: "Open Sans", sans-serif;
+
+body {
+  margin:0px;
+}
+.wrap-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12%;
+  width: 100%;
+  height: 60%;
+  color: rgb(75, 72, 72);
+  h1 {
+    font-size: 35px;
+    font-family: $headerfont;
+    letter-spacing: 2px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    .register-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      label {
+        font-family: $headerfont;
+        font-size: 18px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+      }
+      input {
+        font-family: $bodyFont;
+        font-size: 16px;
+        border-bottom: 3px solid green;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 10px;
+        width: 100%;
+        height: 50px;
+      }
+    }
+    .button-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .login-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 60px;
+      label {
+        font-family: $headerfont;
+        font-size: 18px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+      }
+      input {
+        font-family: $bodyFont;
+        font-size: 16px;
+        border-bottom: 3px solid green;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 10px;
+        width: 100%;
+        height: 50px;
+      }
+    }
+    button {
+      font-family: $bodyFont;
+      font-size: 17px;
+      background-color: rgb(4, 58, 20);
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      // margin: auto;
+      width: 40%;
+      &:hover {
+        background-color: #ef4123;
+      }
+    }
+  }
+  a {
+    font-family: $bodyFont;
+    font-size: 16px;
+    text-decoration: none;
+    &:visited {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.wrap-right {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(32, 32, 1, 0),
+      rgba(0, 0, 0, 0.678)
+    ),
+    url(../img/orangutan-main.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-color: rgb(71, 100, 26);
+  height: 50%;
+  width: 100%;
+  h1 {
+    color: #ef4123;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);;
+    font-family: $headerfont;
+    font-size: 60px;
+    letter-spacing: 2px;
+    padding: 30px 30px 0 30px;
+    margin: 0;
+  }
+  h3 {
+    color: white;
+    font-family: $bodyFont;
+    font-size: 25px;
+    padding: 0 30px 30px 30px;
+    margin: 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+  .wrap-left form .button-wrap {
+    display: flex;
+    flex-direction: column;
+    button {
+      margin: 15px 40px;
+    }
+  }
+  .wrap-left form .login-div {
+    margin-bottom: 40px;
+  }
+  .wrap-left form .login-div input {
+    height: 35px;
+  }
+  .wrap-left form .register-div input {
+    height: 35px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .wrap-left {
+    justify-content: center;
+    position: static;
+    width: 50%;
+    height: 100vh;
+  }
+  .wrap-right {
+    width: 50%;
+    height: 100vh;
+    h1 {
+      font-size: 80px;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .wrap-left {
+    justify-content: center;
+    position: static;
+    width: 40%;
+    height: 100vh;
+  }
+  .wrap-right {
+    width: 60%;
+    height: 100vh;
+  }
+  .wrap-left form .button-wrap {
+    button {
+      margin: 20px 40px;
+    }
+  }
+}
