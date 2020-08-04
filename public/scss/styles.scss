@@ -5,6 +5,8 @@ $bodyFont: "Open Sans", sans-serif;
 body {
   margin:0px;
 }
+//LOGIN/REGISTER SIDE
+
 .wrap-left {
   display: flex;
   flex-direction: column;
@@ -105,7 +107,7 @@ body {
     }
   }
 }
-
+// IMAGE/TITLE SIDE
 .wrap-right {
   background-image: linear-gradient(
       to bottom,
@@ -136,6 +138,54 @@ body {
   }
 }
 
+//MAIN PAGE STYLES
+body {
+  background-color:grey ;
+}
+header {
+  height: 40vh;
+  width: 100vw;
+  background-color: rgb(105, 158, 26);
+  h1 {
+    font-family: $headerfont;
+    // font-size: 60px;
+    color:white;
+    
+  }
+}
+main {
+  height: 60vh;
+  width:100vw;
+  background-color: grey;
+  .image-wrap {
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .orphan{
+      height:450px;
+      width:450px;
+      margin:25px;
+      font-family: $bodyFont;
+      color:white;
+      background-image: url(//savetheorangutan.org/wp-content/uploads/sites/2/2018/06/cinta-tunge.jpg);
+      background-size: cover;
+    }
+
+    .populations{
+      height:450px;
+      width:450px;
+      margin:25px;
+      font-family: $bodyFont;
+      color:white;
+      background-image: url(//savetheorangutan.org/wp-content/uploads/sites/2/2019/02/Sif-Sifa.jpg);
+      background-size: cover;
+    }
+  }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 500px) {
   .wrap-left form .button-wrap {
@@ -158,7 +208,7 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  body {
+  .wrap {
     display: flex;
     flex-direction: row-reverse;
   }
