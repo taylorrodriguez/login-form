@@ -1,14 +1,39 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-  
-    <h1>Welcome, <%= name %>! Let's make a change</h1>
-    <form action="/logout?_method=DELETE" method="POST">
-      <button type="submit">Log Out</button>
-    </form>
+    <header>
+      <h1>Welcome, <%= name %>! Let's make a change</h1>
+      <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit">Log Out</button>
+      </form>
+    </header>
+    <main>
+      <div class="image-wrap">
+        <div class="orphan">
+          Many orangutans are killed as a result of human-orangutan conflicts.
+          The adult orangutans are hunted and shot in the forest or killed when
+          they enter plantation areas. The infant orangutans are captured and
+          kept as pets or sold on the illegal market for wildlife trade. Save
+          the Orangutan works to rescue, rehabilitate, and reintroduce the
+          displaced and orphaned orangutans to their natural habitats.
+        </div>
+        <div class="populations">
+          The orangutans' last natural habitats are disappearing at an alarming
+          rate. The rainforest is being cleared and destroyed for the benefit of
+          palm oil plantations and mining, and large forested areas are being
+          destroyed as a result of logging and forest fires. The remaining
+          forests must be conserved. The forest areas that have been destroyed
+          or cleared must be restored if the orangutan species is to survive in
+          the wild
+        </div>
+      </div>
+    </main>
   </body>
 </html>
