@@ -9,14 +9,15 @@
   </head>
   <body>
     <header>
-      <h1>Welcome, <%= name %>! Let's make a change</h1>
+      <h1>Welcome, <%= name %>!</br> Let's make a change</h1>
       <form action="/logout?_method=DELETE" method="POST">
         <button type="submit">Log Out</button>
       </form>
     </header>
     <main>
       <div class="image-wrap">
-        <div class="orphan">
+        <div class="orphan-image">
+          <h3 class="title">We help displaced and orphaned orangutans</h3>
           Many orangutans are killed as a result of human-orangutan conflicts.
           The adult orangutans are hunted and shot in the forest or killed when
           they enter plantation areas. The infant orangutans are captured and
@@ -24,7 +25,8 @@
           the Orangutan works to rescue, rehabilitate, and reintroduce the
           displaced and orphaned orangutans to their natural habitats.
         </div>
-        <div class="populations">
+        <div class="populations-image">
+          <h3 class="title">We protect the wild orangutan populations</h3>
           The orangutans' last natural habitats are disappearing at an alarming
           rate. The rainforest is being cleared and destroyed for the benefit of
           palm oil plantations and mining, and large forested areas are being
@@ -35,5 +37,6 @@
         </div>
       </div>
     </main>
+    <footer>SaveTheOrangutan&copy;2020</footer>
   </body>
 </html>
