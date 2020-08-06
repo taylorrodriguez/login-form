@@ -3,7 +3,7 @@ $headerfont: "Staatliches", cursive;
 $bodyFont: "Open Sans", sans-serif;
 
 body {
-  margin:0px;
+  margin: 0px;
 }
 //LOGIN/REGISTER SIDE
 
@@ -122,7 +122,7 @@ body {
   width: 100%;
   h1 {
     color: #ef4123;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     font-family: $headerfont;
     font-size: 60px;
     letter-spacing: 2px;
@@ -147,67 +147,80 @@ header {
   background-color: rgb(30, 34, 23);
   h1 {
     font-family: $headerfont;
-    color:white;
+    color: white;
+    text-align: center;
   }
   button {
     font-family: $bodyFont;
     font-size: 16px;
-    background-color:  #ef4123;
-    border: 2px solid  #ef4123;
-    color:white;
-    padding:10px;
+    background-color: #ef4123;
+    border: 2px solid #ef4123;
+    color: white;
+    padding: 10px;
     &:hover {
       background-color: white;
       color: #ef4123;
     }
   }
-
 }
 main {
-  
-  
   background-color: #ef4123;
   .image-wrap {
-  
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    .orphan-image{
+    .orphan-image {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      height:350px;
-      width:350px;
-      margin:25px;
-      padding:20px;
+      height: 350px;
+      width: 350px;
+      margin: 25px;
+      padding: 20px;
       font-family: $bodyFont;
-      color:white;
-      background-image:
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(20, 7, 17, 0.73)),
-    url(//savetheorangutan.org/wp-content/uploads/sites/2/2018/06/cinta-tunge.jpg);
+      color: white;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(245, 246, 252, 0.219),
+          rgba(20, 7, 17, 0.73)
+        ),
+        url(//savetheorangutan.org/wp-content/uploads/sites/2/2018/06/cinta-tunge.jpg);
       background-size: cover;
     }
 
-    .populations-image{
+    .populations-image {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      height:350px;
-      width:350px;
-      margin:25px;
-      padding:20px;
+      height: 350px;
+      width: 350px;
+      margin: 25px;
+      padding: 20px;
       font-family: $bodyFont;
-      color:white;
-      background-image:
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(20, 7, 17, 0.73)),
-    url(//savetheorangutan.org/wp-content/uploads/sites/2/2019/02/Sif-Sifa.jpg);
+      color: white;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(245, 246, 252, 0.247),
+          rgba(20, 7, 17, 0.73)
+        ),
+        url(//savetheorangutan.org/wp-content/uploads/sites/2/2019/02/Sif-Sifa.jpg);
       background-size: cover;
     }
   }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(24, 24, 24);
+  font-size: 16px;
+  color: white;
+  font-family: $bodyFont;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -248,6 +261,9 @@ main {
     h1 {
       font-size: 80px;
     }
+  }
+  header {
+    font-size: 30px;
   }
 }
 
